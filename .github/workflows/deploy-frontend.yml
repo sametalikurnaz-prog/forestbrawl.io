@@ -12,21 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Publish static frontend
+        uses: actions/upload-pages-artifact@v5
         with:
-          node-version: 18
-
-      - name: Install dependencies & build
-        run: |
-          cd artifacts_unpacked/artifacts/forestbrawl
-          npm ci
-          npm run build
-
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: artifacts_unpacked/artifacts/forestbrawl/dist
+          path: artifacts_unpacked/artifacts/forestbrawl/public
 
   deploy:
     needs: build-and-deploy
@@ -36,4 +25,4 @@ jobs:
       id-token: write
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
