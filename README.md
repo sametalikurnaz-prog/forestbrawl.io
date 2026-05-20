@@ -1,8 +1,8 @@
-# forestbrawl.io — Deploy setup (Cloudflare Pages + Fly.io)
+# forestbrawl.io — Deploy setup (GitHub Pages + Fly.io)
 
 Adımlar (kısa):
 
-- Frontend: Cloudflare Pages (ücretsiz CDN)
+- Frontend: GitHub Pages (ücretsiz, repo ile entegrasyon)
 - API / WebSocket: Fly.io (free tier; sınırlamalar var)
 
 Hazırlanan dosyalar:
@@ -13,8 +13,9 @@ Hazırlanan dosyalar:
 - `.github/workflows/deploy-frontend.yml`
 
 Gerekli GitHub Secrets:
-- `FLY_API_TOKEN` — Fly.io API token
-- `CF_API_TOKEN`, `CF_ACCOUNT_ID` — Cloudflare Pages publish token ve account id
+- `FLY_API_TOKEN` — Fly.io API token (api-server deploy için)
+
+Not: Frontend artık GitHub Pages ile deploy edilebilir; Cloudflare isteğe bağlıdır.
 
 Hızlı yerel test
 
@@ -32,4 +33,5 @@ npm run serve
 
 Notlar:
 - Ücretsiz seçeneklerde sürekli düşük-latency garanti edilmez; Türkiye oyuncuları için en iyi deneyim ücretli İstanbul lokasyonlu VPS ile sağlanır.
-- Workflow'lar, repoya push edildiğinde otomatik deploy yapacaktır, fakat Secrets ayarlamanız gerekir.
+- Frontend: GitHub Pages otomatik deploy edildiğinde statik içerik hızlı sunulur.
+- API / WebSocket: GitHub üzerinde sürekli çalışan bir gerçek zamanlı sunucu mümkün değildir; `FLY_API_TOKEN` ile Fly.io kullanmanızı öneririm.
