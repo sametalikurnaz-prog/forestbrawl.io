@@ -1,0 +1,19 @@
+app = "forestbrawl-api"
+primary_region = "fra"
+
+[build]
+  image = "Dockerfile"
+
+[env]
+  PORT = "3000"
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20

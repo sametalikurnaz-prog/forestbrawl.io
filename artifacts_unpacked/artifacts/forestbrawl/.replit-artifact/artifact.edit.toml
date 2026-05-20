@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/forestbrawl/"
+title = "Forest Brawl"
+version = "1.0.0"
+id = "artifacts/forestbrawl"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/forestbrawl/" ]
+localPort = 23720
+
+[services.development]
+run = "pnpm --filter @workspace/forestbrawl run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/forestbrawl", "run", "build" ]
+publicDir = "artifacts/forestbrawl/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23720"
+BASE_PATH = "/forestbrawl"

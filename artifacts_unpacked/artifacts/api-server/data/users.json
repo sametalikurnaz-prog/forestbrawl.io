@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "398a076e-9692-4ff1-a160-d89f2c175081",
+      "username": "emir31",
+      "email": "emir31@gmail.com",
+      "passwordHash": "a495ba3a53f499dee13b9243394f4a363f5b3361880d19d8c353bee8461390b4",
+      "salt": "9510d8c70896b438f96511429d706b72",
+      "createdAt": "2026-05-19T22:27:20.716Z",
+      "xp": 672,
+      "rankId": 0,
+      "coins": 1500,
+      "gamesPlayed": 2,
+      "kills": 0,
+      "deaths": 2,
+      "bestScore": 450,
+      "timePlayed": 296,
+      "ownedItems": [],
+      "equippedItems": {
+        "kanatlar": "w_angel"
+      },
+      "lastXpUpdate": 1779231531146
+    },
+    {
+      "id": "20cc01c0-cc1d-4f05-9718-409a8352fe92",
+      "username": "Baba",
+      "email": "baba@gmail.com",
+      "passwordHash": "e84cb9fd7de7f42edeb154556a3b2a5451ba57ee45ed7a05d9b2a3963afa5377",
+      "salt": "19d5274eeee83b33d18f9a6f6de3328c",
+      "createdAt": "2026-05-19T23:36:51.457Z",
+      "xp": 0,
+      "rankId": 0,
+      "coins": 100,
+      "gamesPlayed": 0,
+      "kills": 0,
+      "deaths": 0,
+      "bestScore": 0,
+      "timePlayed": 0,
+      "ownedItems": [
+        "a_fire_aura"
+      ],
+      "equippedItems": {
+        "aksesuarlar": "a_fire_aura"
+      },
+      "lastXpUpdate": 0
+    }
+  ]
+}

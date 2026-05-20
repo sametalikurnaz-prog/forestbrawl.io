@@ -1,0 +1,35 @@
+{
+  "daily": [],
+  "weekly": [
+    {
+      "userId": "398a076e-9692-4ff1-a160-d89f2c175081",
+      "username": "emir31",
+      "rankId": 0,
+      "score": 672,
+      "kills": 0,
+      "updatedAt": "2026-05-19T22:58:51.147Z"
+    }
+  ],
+  "all": [
+    {
+      "userId": "398a076e-9692-4ff1-a160-d89f2c175081",
+      "username": "emir31",
+      "rankId": 0,
+      "score": 672,
+      "kills": 0,
+      "updatedAt": "2026-05-19T22:58:51.147Z"
+    }
+  ],
+  "kills": [
+    {
+      "userId": "398a076e-9692-4ff1-a160-d89f2c175081",
+      "username": "emir31",
+      "rankId": 0,
+      "score": 472,
+      "kills": 0,
+      "updatedAt": "2026-05-19T22:34:41.168Z"
+    }
+  ],
+  "lastResetDaily": "2026-05-20T00:04:01.588Z",
+  "lastResetWeekly": "2026-05-19T22:13:20.279Z"
+}
